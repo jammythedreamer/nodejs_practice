@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io()
+        socket.on('connect', () => {
+            console.log('connecting to server is success')
+
+            socket.on('message', (text) => alert(text))
+        })
+        
+        function callServer() {
+            socket.emit('message', 'Oh hello!')
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="callServer()">
+        oh hello
+    </button>
+</body>
+
+</html>

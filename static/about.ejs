@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>이 홈페이지에 관하여</title>
+</head>
+
+<body>
+    <h1>어서오세요.</h1>
+    <h3>이곳은 <strong><%= author %></strong>의 홈페이지입니다.</h3>
+    <article>
+        <p>아래는 현재까지 접속자 목록입니다</p>
+    <% for (const ip of ip_list) { %>
+        <div><%= ip %></div>
+    <% } %>
+    </article>
+</body>
+
+</html>

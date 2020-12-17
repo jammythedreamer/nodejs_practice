@@ -1,0 +1,25 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "practice for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jammythedreamer/nodejs_practice.git"
+  },
+  "author": "JammyTheDreamer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jammythedreamer/nodejs_practice/issues"
+  },
+  "homepage": "https://github.com/jammythedreamer/nodejs_practice#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-ejs": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "socket.io": "^3.0.4"
+  }
+}
